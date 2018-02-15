@@ -123,32 +123,32 @@ transpose/fast:
 	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/build
 .PHONY : transpose/fast
 
-main.o: main.c.o
+transpose.o: transpose.c.o
 
-.PHONY : main.o
+.PHONY : transpose.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/main.c.o
-.PHONY : main.c.o
+transpose.c.o:
+	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/transpose.c.o
+.PHONY : transpose.c.o
 
-main.i: main.c.i
+transpose.i: transpose.c.i
 
-.PHONY : main.i
+.PHONY : transpose.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/main.c.i
-.PHONY : main.c.i
+transpose.c.i:
+	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/transpose.c.i
+.PHONY : transpose.c.i
 
-main.s: main.c.s
+transpose.s: transpose.c.s
 
-.PHONY : main.s
+.PHONY : transpose.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/main.c.s
-.PHONY : main.c.s
+transpose.c.s:
+	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/transpose.c.s
+.PHONY : transpose.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... transpose"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... transpose.o"
+	@echo "... transpose.i"
+	@echo "... transpose.s"
 .PHONY : help
 
 

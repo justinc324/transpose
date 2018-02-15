@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/transpose.dir/main.c.o"
+  "CMakeFiles/transpose.dir/transpose.c.o"
   "transpose.pdb"
   "transpose"
 )

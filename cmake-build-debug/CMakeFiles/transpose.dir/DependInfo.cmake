@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/ipodrecruiting/CLionProjects/transpose/main.c" "/Users/ipodrecruiting/CLionProjects/transpose/cmake-build-debug/CMakeFiles/transpose.dir/main.c.o"
+  "/Users/ipodrecruiting/CLionProjects/transpose/transpose.c" "/Users/ipodrecruiting/CLionProjects/transpose/cmake-build-debug/CMakeFiles/transpose.dir/transpose.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

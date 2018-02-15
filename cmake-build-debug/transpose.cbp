@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ipodrecruiting/CLionProjects/transpose/main.c">
+		<Unit filename="/Users/ipodrecruiting/CLionProjects/transpose/transpose.c">
 			<Option target="transpose"/>
 		</Unit>
 		<Unit filename="/Users/ipodrecruiting/CLionProjects/transpose/CMakeLists.txt">

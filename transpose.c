@@ -49,6 +49,7 @@ int arraySize(int textLength, int blockSize){
     }
 }
 
+// a struct for a cipher array
 struct cipherArray {
     int length;
     int blockSize;
@@ -65,7 +66,7 @@ cipherSet(struct cipherArray *array, int index, int value) {
     array->array[index] = value;
 }
 
-// make sure to throw this away
+// utilized from packageVector.c
 void
 printArray(int length, const int *a) {
     for (int i = 0; i < length; i++) {
@@ -73,11 +74,16 @@ printArray(int length, const int *a) {
     }
 }
 
-// throw this away too - testing purposes only
+// utilized from packageVector.c
 void
-vectorPrint(const struct cipherArray *c)
+cipherPrint(const struct cipherArray *c)
 {
     printArray(c->length, c->array);
+}
+
+void
+freeCipher(struct cipherArray *array){
+    free(array);
 }
 
 /* given a pointer to a cipherArray struct, initialize it with the proper amount of space
@@ -105,10 +111,12 @@ cipherInitialize(int length, int textLength, int blockSize){
 int
 main(int argc, char **argv) {
 
+    //freopen("example.txt", "r", stdin);
+
     // convert pointers to strings into ints
     int n = atoi(argv[1]);
-    int i = atoi(argv[2]);
-    int j = atoi(argv[3]);
+    int a = atoi(argv[2]);
+    int b = atoi(argv[3]);
 
     // ensure three and only three arguments are piped in
     if (argc != 4) {
@@ -146,10 +154,29 @@ main(int argc, char **argv) {
         cipherSet(inputArray, x, user_input[x]);
     }
 
-    
+    int numOfBlocks = inputArray->length/n;
+    printf("%d / % d = %d\n", inputArray->length, n, numOfBlocks);
+
+    for (int x = 0; x < numOfBlocks; x++) {
+
+        int multiplier =  x*n;
+
+        for (int y = 0; y < n; y++){
+
+            int originalIndex = multiplier + y;
+            int transposedIndex = multiplier + properMod((a*y + b), n);
+
+            cipherSet(outputArray, originalIndex, inputArray->array[transposedIndex]);
+        }
 
 
-    vectorPrint(inputArray);
+    }
+
+    cipherPrint(outputArray);
+
+    // free up memory
+    freeCipher(inputArray);
+    freeCipher(outputArray);
 
     return 0;
 

@@ -57,38 +57,38 @@ include CMakeFiles/transpose.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/transpose.dir/flags.make
 
-CMakeFiles/transpose.dir/main.c.o: CMakeFiles/transpose.dir/flags.make
-CMakeFiles/transpose.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ipodrecruiting/CLionProjects/transpose/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/transpose.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/transpose.dir/main.c.o   -c /Users/ipodrecruiting/CLionProjects/transpose/main.c
+CMakeFiles/transpose.dir/transpose.c.o: CMakeFiles/transpose.dir/flags.make
+CMakeFiles/transpose.dir/transpose.c.o: ../transpose.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ipodrecruiting/CLionProjects/transpose/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/transpose.dir/transpose.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/transpose.dir/transpose.c.o   -c /Users/ipodrecruiting/CLionProjects/transpose/transpose.c
 
-CMakeFiles/transpose.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/transpose.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ipodrecruiting/CLionProjects/transpose/main.c > CMakeFiles/transpose.dir/main.c.i
+CMakeFiles/transpose.dir/transpose.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/transpose.dir/transpose.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ipodrecruiting/CLionProjects/transpose/transpose.c > CMakeFiles/transpose.dir/transpose.c.i
 
-CMakeFiles/transpose.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/transpose.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ipodrecruiting/CLionProjects/transpose/main.c -o CMakeFiles/transpose.dir/main.c.s
+CMakeFiles/transpose.dir/transpose.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/transpose.dir/transpose.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ipodrecruiting/CLionProjects/transpose/transpose.c -o CMakeFiles/transpose.dir/transpose.c.s
 
-CMakeFiles/transpose.dir/main.c.o.requires:
+CMakeFiles/transpose.dir/transpose.c.o.requires:
 
-.PHONY : CMakeFiles/transpose.dir/main.c.o.requires
+.PHONY : CMakeFiles/transpose.dir/transpose.c.o.requires
 
-CMakeFiles/transpose.dir/main.c.o.provides: CMakeFiles/transpose.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/transpose.dir/main.c.o.provides
+CMakeFiles/transpose.dir/transpose.c.o.provides: CMakeFiles/transpose.dir/transpose.c.o.requires
+	$(MAKE) -f CMakeFiles/transpose.dir/build.make CMakeFiles/transpose.dir/transpose.c.o.provides.build
+.PHONY : CMakeFiles/transpose.dir/transpose.c.o.provides
 
-CMakeFiles/transpose.dir/main.c.o.provides.build: CMakeFiles/transpose.dir/main.c.o
+CMakeFiles/transpose.dir/transpose.c.o.provides.build: CMakeFiles/transpose.dir/transpose.c.o
 
 
 # Object files for target transpose
 transpose_OBJECTS = \
-"CMakeFiles/transpose.dir/main.c.o"
+"CMakeFiles/transpose.dir/transpose.c.o"
 
 # External object files for target transpose
 transpose_EXTERNAL_OBJECTS =
 
-transpose: CMakeFiles/transpose.dir/main.c.o
+transpose: CMakeFiles/transpose.dir/transpose.c.o
 transpose: CMakeFiles/transpose.dir/build.make
 transpose: CMakeFiles/transpose.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ipodrecruiting/CLionProjects/transpose/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable transpose"
@@ -99,7 +99,7 @@ CMakeFiles/transpose.dir/build: transpose
 
 .PHONY : CMakeFiles/transpose.dir/build
 
-CMakeFiles/transpose.dir/requires: CMakeFiles/transpose.dir/main.c.o.requires
+CMakeFiles/transpose.dir/requires: CMakeFiles/transpose.dir/transpose.c.o.requires
 
 .PHONY : CMakeFiles/transpose.dir/requires
 
